@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Source Code Pro";
+  background-color: #1a1a1c;
+  color: #f1f1f1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.coin-app{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.coin-search{
+  margin: 40px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.search-text{
+  padding: 40px 0px;
+}
+
+.main-text{
+  padding: 20px 0px;
+  font-size: 40px;
+}
+
+.coin-input{
+  padding: 10px;
+  background-color: white;
+  width: 230px;
+  height: 45px;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    -225deg,#ac32e4 0%,
+    #7918f2 50%,
+    #4801ff 100%
+  );
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin-input::placeholder{
+  color: white;
 }
